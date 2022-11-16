@@ -18,15 +18,13 @@ public class Main {
 
             ServerSocket socket = new ServerSocket(port);
 
-            Socket s = socket.accept();
 
-            System.out.println("connected");
 
-            BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
+
 
             while(true) {
-                String line = in.readLine();
-                System.out.println(line);
+                Socket s = socket.accept();
+                new MessageThread(s);
             }
 
         } catch (IOException e) {
