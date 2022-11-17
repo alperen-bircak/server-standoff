@@ -19,10 +19,7 @@ public class Main {
             ServerSocket socket = new ServerSocket(port);
 
 
-
-
-
-            while(true) {
+            while (true) {
                 Socket s = socket.accept();
                 new MessageThread(s);
             }
