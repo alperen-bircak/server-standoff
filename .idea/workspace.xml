@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="multithreaded connection">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +19,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="916b5143-42a1-4c07-b5dc-54631ab82c14" />
+        <option name="url" value="https://github.com/alperen-bircak/server-standoff.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -58,7 +68,7 @@
       <workItem from="1668606818920" duration="5230000" />
       <workItem from="1668687637284" duration="392000" />
       <workItem from="1668694134187" duration="734000" />
-      <workItem from="1670249990251" duration="8894000" />
+      <workItem from="1670249990251" duration="8944000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668606836258</created>
@@ -81,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668611435348</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding compiled files">
+      <created>1670259186920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670259186920</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +108,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="connection test" />
     <MESSAGE value="multithreaded connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="multithreaded connection" />
+    <MESSAGE value="adding compiled files" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding compiled files" />
   </component>
 </project>
