@@ -21,11 +21,13 @@ public class Main {
 
             while (true) {
                 Socket s = socket.accept();
-                new MessageThread(s);
+
+                Request req = new Request(s);
+                req.reply(req.getNBR().toString());
             }
 
         } catch (IOException e) {
-            System.out.println("No host found");
+            System.out.println(e);
         }
 
 

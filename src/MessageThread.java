@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.Socket;
 
 public class MessageThread implements Runnable{
@@ -13,12 +11,18 @@ public class MessageThread implements Runnable{
     public void run() {
         try {
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            OutputStream outs = socket.getOutputStream();
+            PrintWriter out = new PrintWriter(outs, true);
             String line = in.readLine();
-
             System.out.println(line);
-            if(socket.isClosed()){
-                System.out.println("closed");
-            }
+
+
+
+
+
+            out.println(line);
+
+            socket.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
