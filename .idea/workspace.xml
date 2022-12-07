@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/server-standoff/Request.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NBR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Request.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/MessageThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/MessageThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MessageThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MessageThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/NBR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/NBR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NBR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NBR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Request.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
       <workItem from="1668694134187" duration="734000" />
       <workItem from="1670249990251" duration="10418000" />
       <workItem from="1670349481326" duration="3223000" />
-      <workItem from="1670422746300" duration="10700000" />
+      <workItem from="1670422746300" duration="11671000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668606836258</created>
@@ -125,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670259243143</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="echo NBR requests">
+      <created>1670440288205</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670440288205</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +141,17 @@
     <MESSAGE value="connection test" />
     <MESSAGE value="multithreaded connection" />
     <MESSAGE value="adding compiled files" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding compiled files" />
+    <MESSAGE value="echo NBR requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="echo NBR requests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

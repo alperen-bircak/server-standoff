@@ -10,27 +10,32 @@ public class NBR {
     }
 
     static NBR read(Reader in) throws IOException {
-        String contentString = "";
+        try {
+            String contentString = "";
 
-        char c;
+            char c;
 
-        String ints = "";
-        while ((c = (char) in.read()) != '#') {
-            ints += c;
-            contentString+=c;
-        }
-        contentString+='#';
-        int amount = Integer.parseInt(ints);
-        int count = 0;
-        do {
-            c = (char) in.read();
-            contentString += c;
-            if (c == ';') {
-                count++;
+            String ints = "";
+            while ((c = (char) in.read()) != '#') {
+                ints += c;
+                contentString+=c;
             }
-        } while (count != amount);
+            contentString+='#';
+            int amount = Integer.parseInt(ints);
+            int count = 0;
+            do {
+                c = (char) in.read();
+                contentString += c;
+                if (c == ';') {
+                    count++;
+                }
+            } while (count != amount);
 
-        return NBR.parseString(contentString);
+            return NBR.parseString(contentString);
+        } catch (Exception e) {
+            return new NBR().put("error", e.toString());
+        }
+
     }
     static NBR parseString(String s) {
         int amount = Integer.parseInt(s.substring(0,s.indexOf('#')));
@@ -47,8 +52,9 @@ public class NBR {
         return result;
     }
 
-    void put(String key, String value) {
+    NBR put(String key, String value) {
         map.put(key, value);
+        return this;
     }
 
     String get(String key) {

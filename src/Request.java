@@ -10,6 +10,7 @@ public class Request {
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
         this.body = NBR.read(in);
+
         System.out.println(this.body.toString());
     }
 
