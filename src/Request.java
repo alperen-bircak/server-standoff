@@ -5,24 +5,44 @@ public class Request {
     private Socket socket;
     private NBR body;
 
-    Request(Socket socket) throws IOException {
+    private boolean isAlive = false;
+
+    Request(Socket socket){
         this.socket = socket;
-        BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
-        this.body = NBR.read(in);
+        try {
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
-        System.out.println(this.body.toString());
+            this.body = NBR.read(in);
+
+            this.isAlive = true;
+        } catch (Exception e) {
+            NBR error = new NBR().put("error", e.toString());
+            this.reply(error);
+        }
+
     }
 
-    void reply(String reply) throws IOException {
-        DataOutputStream out = new DataOutputStream(socket.getOutputStream());
+    void reply(NBR reply){
+        try {
+            DataOutputStream out = new DataOutputStream(socket.getOutputStream());
 
-        out.writeBytes(reply);
+            out.writeBytes(reply.toString());
 
-        socket.close();
+            socket.close();
+
+
+            this.isAlive = false;
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
     NBR getNBR() {
         return this.body;
+    }
+
+    boolean isAlive() {
+        return this.isAlive;
     }
 }

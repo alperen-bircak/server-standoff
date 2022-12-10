@@ -10,26 +10,26 @@ public class Main {
     static int port = 8080;
 
     public static void main(String[] args) {
+        Router router = new Router();
+        router.addRoute("echo", new Echo());
 
 
         try {
             InetAddress localhost = getLocalHost();
             System.out.println(localhost.getHostAddress());
 
-            ServerSocket socket = new ServerSocket(port);
-
 
             while (true) {
-                Socket s = socket.accept();
+                try (ServerSocket socket = new ServerSocket(port)) {
+                    Socket s = socket.accept();
+                    new RequestThread(router, s);
+                }
 
-                Request req = new Request(s);
-                req.reply(req.getNBR().toString());
             }
+
 
         } catch (IOException e) {
             System.out.println(e);
         }
-
-
     }
 }
