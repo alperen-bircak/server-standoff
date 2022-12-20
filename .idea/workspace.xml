@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Request.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/DoAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/DoAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/EnterGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/EnterGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <workItem from="1670858193602" duration="1135000" />
       <workItem from="1671438528018" duration="2442000" />
       <workItem from="1671458088024" duration="1078000" />
-      <workItem from="1671546714197" duration="13320000" />
+      <workItem from="1671546714197" duration="14982000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668606836258</created>
@@ -196,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671563441841</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="print response">
+      <created>1671566785583</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671566785583</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +231,8 @@
     <MESSAGE value="Enter game and get game" />
     <MESSAGE value="add missing compiled files" />
     <MESSAGE value="progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress" />
+    <MESSAGE value="print response" />
+    <option name="LAST_COMMIT_MESSAGE" value="print response" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

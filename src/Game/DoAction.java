@@ -13,9 +13,16 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class DoAction implements Controller {
+    enum Win{
+        ME,
+        OTHER,
+        TIE
+    }
     private int otherPlayer(int player) {
         return player == 1 ? 2 : 1;
     }
+
+
     @Override
     /*
     params: player_id, game_id, action
@@ -40,7 +47,12 @@ public class DoAction implements Controller {
 
             //If you are the second one to make an action
             if (game.getPlayerRound(otherPlayer(player)) == game.getRound()) {
+                Game.Action my = Game.Action.valueOf(req.getNBR().get("action"));
+                Game.Action other = game.getPlayerAction(otherPlayer(player));
 
+                if(my == Game.Action.RELOAD) {
+                    game.setPlayerBullet(player,game.getPlayerBullet(player)+1);
+                }
             } else {
                 game.setState(Game.GameState.WAIT);
             }
