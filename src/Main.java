@@ -4,7 +4,7 @@ import API.Router;
 import Database.Database;
 import Database.Store;
 import Database.StoreException;
-import Game.Game;
+import Game.*;
 import Player.*;
 
 import java.io.IOException;
@@ -25,6 +25,9 @@ public class Main {
 
         router.addRoute("player.add", new AddPlayer());
         router.addRoute("player.get", new GetPlayer());
+        router.addRoute("game.start", new StartGame());
+        router.addRoute("game.enter", new EnterGame());
+        router.addRoute("game.state", new GetState());
 
         try {
             InetAddress localhost = getLocalHost();

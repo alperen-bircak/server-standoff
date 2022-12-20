@@ -10,7 +10,12 @@ public class Router {
     }
 
     public void handle(Request req) {
+        System.out.println(req.getNBR().toString());
         Controller c = routeMap.get(req.getNBR().get("route"));
+        if(c==null) {
+            req.error("Route not found.");
+            return;
+        }
         c.respond(req);
     }
 

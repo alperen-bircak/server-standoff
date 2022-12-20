@@ -13,14 +13,33 @@ public class Game extends Storable {
     int player1bullet = 0;
     int player2bullet = 0;
     enum Action {
+        NONE,
         RELOAD,
         PROTECT,
         PISTOL,
         RIFLE,
         BAZOOKA
     }
-    Action player1action;
-    Action player2action;
+    Action player1action = Action.NONE;
+    Action player2action = Action.NONE;
+
+    enum GameState {
+        CONT,
+        WAIT,
+        TIE,
+        WON1,
+        WON2
+    }
+
+    GameState state = GameState.WAIT;
+
+    public GameState getState() {
+        return state;
+    }
+
+    public void setState(GameState state) {
+        this.state = state;
+    }
 
     public int getRound() {
         return round;
