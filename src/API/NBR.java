@@ -1,3 +1,5 @@
+package API;
+
 import java.io.IOException;
 import java.io.Reader;
 import java.util.HashMap;
@@ -5,12 +7,13 @@ import java.util.HashMap;
 public class NBR {
     private HashMap<String, String> map;
 
-    NBR() {
+    public NBR() {
         this.map = new HashMap<String, String>();
     }
 
-    static NBR read(Reader in) throws IOException {
+    public static NBR read(Reader in) throws IOException {
         String contentString = "";
+
 
         char c;
 
@@ -30,12 +33,14 @@ public class NBR {
             }
         } while (count != amount);
 
+
+
         return NBR.parseString(contentString);
 
 
     }
 
-    static NBR parseString(String s) {
+    public static NBR parseString(String s) {
         int amount = Integer.parseInt(s.substring(0, s.indexOf('#')));
         NBR result = new NBR();
 
@@ -50,12 +55,12 @@ public class NBR {
         return result;
     }
 
-    NBR put(String key, String value) {
+    public NBR put(String key, String value) {
         map.put(key, value);
         return this;
     }
 
-    String get(String key) {
+    public String get(String key) {
         return map.get(key);
     }
 

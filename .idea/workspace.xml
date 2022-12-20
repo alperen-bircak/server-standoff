@@ -5,19 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/server-standoff/RequestThread.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/server-standoff/Router.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Echo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RequestThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Router.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Database/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Database/Storable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Database/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Database/StoreException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/StartGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player/AddPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player/GetPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Echo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/NBR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/NBR.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/MessageThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/NBR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/RequestThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Router.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Echo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Echo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NBR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NBR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MessageThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NBR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/NBR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RequestThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/RequestThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Router.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +78,9 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alperen/IdeaProjects/server-standoff/src/Player&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -75,6 +91,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Player" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -99,7 +120,12 @@
       <workItem from="1670349481326" duration="3223000" />
       <workItem from="1670422746300" duration="11882000" />
       <workItem from="1670494229852" duration="4364000" />
-      <workItem from="1670677556356" duration="220000" />
+      <workItem from="1670677556356" duration="376000" />
+      <workItem from="1670837148181" duration="5707000" />
+      <workItem from="1670858193602" duration="1135000" />
+      <workItem from="1671438528018" duration="2442000" />
+      <workItem from="1671458088024" duration="1078000" />
+      <workItem from="1671546714197" duration="2157000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668606836258</created>
@@ -150,11 +176,36 @@
       <option name="project" value="LOCAL" />
       <updated>1670441195195</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Error replies fixed">
+      <created>1670677812581</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670677812581</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add missing compiled files">
+      <created>1670677838452</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670677838452</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -164,7 +215,9 @@
     <MESSAGE value="adding compiled files" />
     <MESSAGE value="echo NBR requests" />
     <MESSAGE value="dont explode on error" />
-    <option name="LAST_COMMIT_MESSAGE" value="dont explode on error" />
+    <MESSAGE value="Error replies fixed" />
+    <MESSAGE value="add missing compiled files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add missing compiled files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

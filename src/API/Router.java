@@ -1,9 +1,11 @@
+package API;
+
 import java.util.HashMap;
 
 public class Router {
     HashMap<String, Controller> routeMap;
 
-    Router() {
+    public Router() {
         this.routeMap = new HashMap<String, Controller>();
     }
 

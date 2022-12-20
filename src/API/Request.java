@@ -1,3 +1,5 @@
+package API;
+
 import java.io.*;
 import java.net.*;
 
@@ -14,16 +16,14 @@ public class Request {
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
             this.body = NBR.read(in);
-
             this.isAlive = true;
         } catch (Exception e) {
-            NBR error = new NBR().put("error", e.toString());
-            this.reply(error);
+            this.error(e.toString());
         }
 
     }
 
-    void reply(NBR reply){
+    public void reply(NBR reply){
         try {
             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
 
@@ -38,7 +38,12 @@ public class Request {
         }
     }
 
-    NBR getNBR() {
+    public void error(String error) {
+        NBR errorNBR = new NBR().put("error", error);
+        this.reply(errorNBR);
+    }
+
+    public NBR getNBR() {
         return this.body;
     }
 
