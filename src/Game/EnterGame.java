@@ -50,6 +50,7 @@ public class EnterGame implements Controller {
             Player player2 = playerStore.get(UUID.fromString(req.getNBR().get("player_id")));
             game.setPlayer(2, player2);
             game.setPlayerRound(2, 0);
+            game.setRound(1);
 
             NBR response = new NBR();
             response.put("game_id", game.getId().toString());

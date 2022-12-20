@@ -27,7 +27,6 @@ public class Game extends Storable {
     enum GameState {
         CONT,
         WAIT,
-        TIE,
         WON1,
         WON2
     }
@@ -120,7 +119,7 @@ public class Game extends Storable {
     }
 
 
-    public int isPlayerRound(int no) {
+    public int getPlayerRound(int no) {
         if(no == 1) {
             return player1round;
         } else {

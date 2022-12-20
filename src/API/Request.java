@@ -26,11 +26,12 @@ public class Request {
     public void reply(NBR reply){
         try {
             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
-
+            System.out.println("Response{");
+            System.out.println(reply.toString());
+            System.out.println('}');
             out.writeBytes(reply.toString());
 
             socket.close();
-
 
             this.isAlive = false;
         } catch (Exception e) {
