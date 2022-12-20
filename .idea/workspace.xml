@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/DoAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/DoAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/EnterGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/EnterGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Game/DoAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/DoAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Game/EnterGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/EnterGame.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,7 @@
       <workItem from="1670858193602" duration="1135000" />
       <workItem from="1671438528018" duration="2442000" />
       <workItem from="1671458088024" duration="1078000" />
-      <workItem from="1671546714197" duration="14982000" />
+      <workItem from="1671546714197" duration="16190000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668606836258</created>
@@ -201,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671566785583</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="game state change">
+      <created>1671568409778</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671568409778</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +239,8 @@
     <MESSAGE value="add missing compiled files" />
     <MESSAGE value="progress" />
     <MESSAGE value="print response" />
-    <option name="LAST_COMMIT_MESSAGE" value="print response" />
+    <MESSAGE value="game state change" />
+    <option name="LAST_COMMIT_MESSAGE" value="game state change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
