@@ -43,12 +43,13 @@ public class EnterGame implements Controller {
                 throw new Exception("Game not found");
             }
 
-            if(game.getPlayer2()!=null){
+            if(game.getPlayer(2)!=null){
                 throw new Exception("Game is full");
             }
 
             Player player2 = playerStore.get(UUID.fromString(req.getNBR().get("player_id")));
-            game.setPlayer2(player2);
+            game.setPlayer(2, player2);
+            game.setPlayerRound(2, 0);
 
             NBR response = new NBR();
             response.put("game_id", game.getId().toString());

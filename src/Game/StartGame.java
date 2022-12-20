@@ -46,8 +46,9 @@ public class StartGame implements Controller {
 
             Game game = new Game();
             Player player1 = playerStore.get(UUID.fromString(req.getNBR().get("player_id")));
-            game.setPlayer1(player1);
+            game.setPlayer(1, player1);
             game.setKey(key);
+            game.setPlayerRound(1, 0);
             store.add(game);
 
             NBR response = new NBR();

@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="Starting creating the controllers">
-      <change afterPath="$PROJECT_DIR$/src/Game/EnterGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/GetState.java" afterDir="false" />
+    <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/CloseGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/DoAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/CloseGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/DoAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Game/EnterGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/EnterGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Game/Game$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/Game$GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Game/GetState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/GetState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Game/StartGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/StartGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Router.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/EnterGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/EnterGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GetState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GetState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/StartGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/StartGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -106,7 +114,7 @@
       <workItem from="1670858193602" duration="1135000" />
       <workItem from="1671438528018" duration="2442000" />
       <workItem from="1671458088024" duration="1078000" />
-      <workItem from="1671546714197" duration="7040000" />
+      <workItem from="1671546714197" duration="11365000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668606836258</created>
@@ -178,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671550073273</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Enter game and get game">
+      <created>1671555922368</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671555922368</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add missing compiled files">
+      <created>1671556006224</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671556006224</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,9 +226,10 @@
     <MESSAGE value="echo NBR requests" />
     <MESSAGE value="dont explode on error" />
     <MESSAGE value="Error replies fixed" />
-    <MESSAGE value="add missing compiled files" />
     <MESSAGE value="Starting creating the controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting creating the controllers" />
+    <MESSAGE value="Enter game and get game" />
+    <MESSAGE value="add missing compiled files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add missing compiled files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

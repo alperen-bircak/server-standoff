@@ -4,7 +4,6 @@ import Database.Storable;
 import Player.*;
 
 
-
 public class Game extends Storable {
     int round = 0;
     String key = "";
@@ -12,6 +11,7 @@ public class Game extends Storable {
     Player player2;
     int player1bullet = 0;
     int player2bullet = 0;
+
     enum Action {
         NONE,
         RELOAD,
@@ -20,6 +20,7 @@ public class Game extends Storable {
         RIFLE,
         BAZOOKA
     }
+
     Action player1action = Action.NONE;
     Action player2action = Action.NONE;
 
@@ -32,6 +33,13 @@ public class Game extends Storable {
     }
 
     GameState state = GameState.WAIT;
+
+    int player1round = -1;
+    int player2round = -1;
+
+    public Game clone() throws CloneNotSupportedException {
+        return (Game) super.clone();
+    }
 
     public GameState getState() {
         return state;
@@ -57,70 +65,77 @@ public class Game extends Storable {
         this.key = key;
     }
 
-    public Player getPlayer1() {
-        return player1;
+    public Player getPlayer(int no) {
+        if(no == 1) {
+            return player1;
+        } else {
+            return player2;
+        }
     }
 
-    public void setPlayer1(Player player1) {
-        this.player1 = player1;
+    public void setPlayer(int no, Player player) {
+        if(no == 1) {
+            this.player1 = player;
+        } else {
+            this.player2 = player;
+        }
+
     }
 
-    public Player getPlayer2() {
-        return player2;
+    public int getPlayerBullet(int no) {
+        if(no == 1) {
+            return player1bullet;
+        } else {
+            return player2bullet;
+        }
     }
 
-    public void setPlayer2(Player player2) {
-        this.player2 = player2;
+    public void setPlayerBullet(int no, int playerbullet) {
+        if(no == 1) {
+            this.player1bullet = playerbullet;
+        } else {
+            this.player2bullet = playerbullet;
+        }
+
     }
 
-    public int getPlayer1bullet() {
-        return player1bullet;
+
+
+    public Action getPlayerAction(int no) {
+        if(no == 1) {
+            return player1action;
+        } else {
+            return player2action;
+        }
+
     }
 
-    public void setPlayer1bullet(int player1bullet) {
-        this.player1bullet = player1bullet;
+    public void setPlayerAction(int no, Action playeraction) {
+        if(no == 1) {
+            this.player1action = playeraction;
+        } else {
+            this.player2action = playeraction;
+        }
+
     }
 
-    public int getPlayer2bullet() {
-        return player2bullet;
+
+    public int isPlayerRound(int no) {
+        if(no == 1) {
+            return player1round;
+        } else {
+            return player2round;
+        }
     }
 
-    public void setPlayer2bullet(int player2bullet) {
-        this.player2bullet = player2bullet;
+    public void setPlayerRound(int no, int playerround) {
+        if(no == 1) {
+            this.player1round = playerround;
+        } else {
+            this.player2round = playerround;
+        }
+
     }
 
-    public Action getPlayer1action() {
-        return player1action;
-    }
 
-    public void setPlayer1action(Action player1action) {
-        this.player1action = player1action;
-    }
-
-    public Action getPlayer2action() {
-        return player2action;
-    }
-
-    public void setPlayer2action(Action player2action) {
-        this.player2action = player2action;
-    }
-
-    public boolean isPlayer1ready() {
-        return player1ready;
-    }
-
-    public void setPlayer1ready(boolean player1ready) {
-        this.player1ready = player1ready;
-    }
-
-    public boolean isPlayer2ready() {
-        return player2ready;
-    }
-
-    public void setPlayer2ready(boolean player2ready) {
-        this.player2ready = player2ready;
-    }
-
-    boolean player1ready = false;
-    boolean player2ready = false;
 }

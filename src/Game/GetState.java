@@ -8,6 +8,7 @@ import Database.Store;
 
 import java.util.Collection;
 import java.util.UUID;
+import Player.*;
 
 public class GetState implements Controller {
 
@@ -25,14 +26,19 @@ public class GetState implements Controller {
             Game game = store.get(UUID.fromString(req.getNBR().get("game_id")));
 
             NBR response = new NBR();
+            Player player1 = game.getPlayer(1);
+            Player player2 = game.getPlayer(2);
+            if(player1 != null && player2 != null) {
+                response.put("name1", game.getPlayer(1).getName());
+                response.put("name2", game.getPlayer(2).getName());
+            }
 
             response.put("state", game.getState().name());
-            response.put("name1", game.getPlayer1().getName());
-            response.put("name2", game.getPlayer2().getName());
-            response.put("bullet1", Integer.toString(game.getPlayer1bullet()));
-            response.put("bullet2", Integer.toString(game.getPlayer2bullet()));
-            response.put("action1", game.getPlayer1action().name());
-            response.put("action2", game.getPlayer2action().name());
+
+            response.put("bullet1", Integer.toString(game.getPlayerBullet(1)));
+            response.put("bullet2", Integer.toString(game.getPlayerBullet(2)));
+            response.put("action1", game.getPlayerAction(1).name());
+            response.put("action2", game.getPlayerAction(2).name());
 
             req.reply(response);
         } catch (Exception e) {
