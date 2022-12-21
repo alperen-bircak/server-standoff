@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Game/DoAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/DoAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/DoAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/DoAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +102,7 @@
       <workItem from="1671458088024" duration="1078000" />
       <workItem from="1671546714197" duration="16190000" />
       <workItem from="1671625243427" duration="1272000" />
-      <workItem from="1671628201705" duration="845000" />
+      <workItem from="1671628201705" duration="2534000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668606836258</created>
@@ -245,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671629201721</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="player no on do action">
+      <created>1671629265464</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1671629265464</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +288,8 @@
     <MESSAGE value="fixes for routes" />
     <MESSAGE value="bullet chnage to amount" />
     <MESSAGE value="do action returns success" />
-    <option name="LAST_COMMIT_MESSAGE" value="do action returns success" />
+    <MESSAGE value="player no on do action" />
+    <option name="LAST_COMMIT_MESSAGE" value="player no on do action" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

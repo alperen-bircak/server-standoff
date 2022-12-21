@@ -27,9 +27,9 @@ public class DoAction implements Controller {
             Game game = store.get(UUID.fromString(req.getNBR().get("game_id")));
 
             int player = 0;
-            if(game.getPlayer(1).getId() == UUID.fromString(req.getNBR().get("player_id"))) {
+            if(game.getPlayer(1).getId().equals(UUID.fromString(req.getNBR().get("player_id")))) {
                 player = 1;
-            } else if (game.getPlayer(2).getId() == UUID.fromString(req.getNBR().get("player_id"))) {
+            } else if (game.getPlayer(2).getId().equals(UUID.fromString(req.getNBR().get("player_id")))) {
                 player = 2;
             } else {
                 throw new Exception("invalid player");
