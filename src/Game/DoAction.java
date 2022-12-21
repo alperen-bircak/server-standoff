@@ -17,7 +17,7 @@ public class DoAction implements Controller {
 
     @Override
     /*
-    params: player_id, game_id, action, bullet_change
+    params: player_id, game_id, action, bullet_amount
     returns: success
      */
 
@@ -37,7 +37,7 @@ public class DoAction implements Controller {
 
             game.setPlayerAction(player, Game.Action.valueOf(req.getNBR().get("action")));
             game.setState(Game.GameState.WAIT);
-            game.setPlayerBullet(player, game.getPlayerBullet(player) + Integer.parseInt(req.getNBR().get("bullet_change")));
+            game.setPlayerBullet(player, Integer.parseInt(req.getNBR().get("bullet_amount")));
             game.setPlayerRound(player, game.getRound());
 
         } catch (Exception e) {
