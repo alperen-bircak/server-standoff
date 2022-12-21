@@ -18,7 +18,7 @@ public class DoAction implements Controller {
     @Override
     /*
     params: player_id, game_id, action, bullet_amount
-    returns: success
+    returns: success, player_no
      */
 
     public void respond(Request req) {
@@ -40,7 +40,7 @@ public class DoAction implements Controller {
             game.setPlayerBullet(player, Integer.parseInt(req.getNBR().get("bullet_amount")));
             game.setPlayerRound(player, game.getRound());
 
-            req.reply((new NBR()).put("success", "true"));
+            req.reply((new NBR()).put("success", "true").put("player_no", Integer.toString(player)));
 
         } catch (Exception e) {
             req.error(e.getMessage());
