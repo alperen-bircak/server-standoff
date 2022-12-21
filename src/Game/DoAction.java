@@ -40,6 +40,8 @@ public class DoAction implements Controller {
             game.setPlayerBullet(player, Integer.parseInt(req.getNBR().get("bullet_amount")));
             game.setPlayerRound(player, game.getRound());
 
+            req.reply((new NBR()).put("success", "true"));
+
         } catch (Exception e) {
             req.error(e.getMessage());
         }
