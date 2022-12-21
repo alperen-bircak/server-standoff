@@ -38,7 +38,7 @@ public class GetState implements Controller {
     @Override
     /*
     Params: game_id
-    Returns: state, name1, name2, bullet1, bullet2, action1, action2
+    Returns: state, name1, name2, bullet1, bullet2, action1, action2, round
      */
 
     public synchronized void respond(Request req) {
@@ -67,6 +67,8 @@ public class GetState implements Controller {
                 game.setState(calculateState(game, game.getPlayerAction(1), game.getPlayerAction(2)));
                 game.setRound(game.getRound()+1);
             }
+
+            response.put("round", Integer.toString(game.getRound()));
 
             req.reply(response);
         } catch (Exception e) {
