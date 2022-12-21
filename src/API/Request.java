@@ -29,7 +29,7 @@ public class Request {
             System.out.println("Response{");
             System.out.println(reply.toString());
             System.out.println('}');
-            out.writeBytes(reply.toString());
+            out.writeBytes(reply +"marv");
 
             socket.close();
 
