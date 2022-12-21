@@ -29,6 +29,7 @@ public class Main {
         router.addRoute("game.enter", new EnterGame());
         router.addRoute("game.state", new GetState());
         router.addRoute("game.close", new CloseGame());
+        router.addRoute("game.action", new DoAction());
 
         try {
             InetAddress localhost = getLocalHost();

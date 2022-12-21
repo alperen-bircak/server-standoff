@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Game/GetState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GetState.java" afterDir="false" />
+    <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="update compiled files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Game/DoAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/DoAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Game/GetState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/GetState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/DoAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/DoAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +104,7 @@
       <workItem from="1671438528018" duration="2442000" />
       <workItem from="1671458088024" duration="1078000" />
       <workItem from="1671546714197" duration="16190000" />
-      <workItem from="1671625243427" duration="1047000" />
+      <workItem from="1671625243427" duration="1151000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668606836258</created>
@@ -214,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671626270728</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fixed visibility error">
+      <created>1671626307166</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1671626307166</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +258,8 @@
     <MESSAGE value="print response" />
     <MESSAGE value="game state change" />
     <MESSAGE value="Implemented get state" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented get state" />
+    <MESSAGE value="fixed visibility error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed visibility error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -13,14 +13,6 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class DoAction implements Controller {
-    enum Win{
-        ME,
-        OTHER,
-        TIE
-    }
-    private int otherPlayer(int player) {
-        return player == 1 ? 2 : 1;
-    }
 
 
     @Override
