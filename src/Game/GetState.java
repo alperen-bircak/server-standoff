@@ -14,7 +14,7 @@ import Player.*;
 public class GetState implements Controller {
     HashMap<Game.Action, Integer> powers;
 
-    GetState() {
+    public GetState() {
         powers = new HashMap<>();
         powers.put(Game.Action.RELOAD, 0);
         powers.put(Game.Action.PISTOL, 1);
