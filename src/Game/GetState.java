@@ -65,6 +65,7 @@ public class GetState implements Controller {
 
             if(game.getPlayerRound(1) == game.getRound() && game.getPlayerRound(2) == game.getRound()) {
                 game.setState(calculateState(game, game.getPlayerAction(1), game.getPlayerAction(2)));
+                game.setRound(game.getRound()+1);
             }
 
             req.reply(response);
