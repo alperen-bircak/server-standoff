@@ -25,7 +25,7 @@ public class DoAction implements Controller {
 
     @Override
     /*
-    params: player_id, game_id, action
+    params: player_id, game_id, action, bullet_change
     returns: success
      */
 
@@ -44,18 +44,10 @@ public class DoAction implements Controller {
             }
 
             game.setPlayerAction(player, Game.Action.valueOf(req.getNBR().get("action")));
+            game.setState(Game.GameState.WAIT);
+            game.setPlayerBullet(player, game.getPlayerBullet(player) + Integer.parseInt(req.getNBR().get("bullet_change")));
+            game.setPlayerRound(player, game.getRound());
 
-            //If you are the second one to make an action
-            if (game.getPlayerRound(otherPlayer(player)) == game.getRound()) {
-                Game.Action my = Game.Action.valueOf(req.getNBR().get("action"));
-                Game.Action other = game.getPlayerAction(otherPlayer(player));
-
-                if(my == Game.Action.RELOAD) {
-                    game.setPlayerBullet(player,game.getPlayerBullet(player)+1);
-                }
-            } else {
-                game.setState(Game.GameState.WAIT);
-            }
         } catch (Exception e) {
             req.error(e.getMessage());
         }
