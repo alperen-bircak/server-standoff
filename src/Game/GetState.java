@@ -41,7 +41,7 @@ public class GetState implements Controller {
     Returns: state, name1, name2, bullet1, bullet2, action1, action2
      */
 
-    public void respond(Request req) {
+    public synchronized void respond(Request req) {
         try {
             Store<Game> store = Database.get("Game");
 
