@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62c5533f-3ef8-4809-bb97-1d80be4f4870" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/GetState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GetState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server-standoff/Game/GetState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server-standoff/Game/GetState.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,7 @@
       <workItem from="1671546714197" duration="16190000" />
       <workItem from="1671625243427" duration="1272000" />
       <workItem from="1671628201705" duration="6572000" />
-      <workItem from="1671694122331" duration="133000" />
+      <workItem from="1671694122331" duration="563000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668606836258</created>
@@ -280,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671634705000</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="BAZOOKA buff">
+      <created>1671694304161</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1671694304161</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +327,8 @@
     <MESSAGE value="id equals fix" />
     <MESSAGE value="marv" />
     <MESSAGE value="sync game" />
-    <option name="LAST_COMMIT_MESSAGE" value="sync game" />
+    <MESSAGE value="BAZOOKA buff" />
+    <option name="LAST_COMMIT_MESSAGE" value="BAZOOKA buff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
