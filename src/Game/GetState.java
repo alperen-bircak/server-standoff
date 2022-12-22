@@ -22,6 +22,12 @@ public class GetState implements Controller {
         powers.put(Game.Action.BAZOOKA, 3);
     }
     private Game.GameState calculateState(Game game, Game.Action action1, Game.Action action2) {
+        if(action1 == Game.Action.BAZOOKA) {
+            return Game.GameState.WON1;
+        }
+        if(action2 == Game.Action.BAZOOKA) {
+            return Game.GameState.WON2;
+        }
         if(action1 == Game.Action.PROTECT || action2 == Game.Action.PROTECT) {
             return Game.GameState.CONT;
         }
